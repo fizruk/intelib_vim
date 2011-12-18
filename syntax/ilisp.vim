@@ -11,6 +11,10 @@ syn match illNIL /(L)/
 
 syn region justParens start=+[^\~]([^L]+ end=+)+
 
+syn region illLineComment start=+\/\/+ end=+$+ contains=illTODO
+syn region illComments start=+\/\*+ end=+\*\/+ contains=illTODO
+syn keyword illTODO TODO FIXME XXX contained
+
 " Symbols
 syn match illSymbol /[a-zA-Z_][a-zA-Z0-9_]*/
 
@@ -108,7 +112,10 @@ if version >= 508
     command -nargs=+ HiLink hi def link <args>
   endif
 
-  HiLink illDelim           Comment
+  HiLink illComments        Comment
+  HiLink illLineComment     Comment
+  HiLink illTODO            ToDo
+
   HiLink illFunQuote        Special
 
   HiLink illNIL             Type
