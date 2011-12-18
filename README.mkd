@@ -3,7 +3,7 @@ Vim files for InteLib
 
 Syntax files for InteLib Lisp are included in C++ syntax file as follows:
 
-    syn include @ilisp $HOME/.vim/syntax/ilisp.vim
+    syn include @ilisp syntax/ilisp.vim
     syn region intelibLispRegion start=+(L|+ end=+)+ contains=intelibLispRegion,@ilisp
 
 So you can use your own C++ syntax file and just include these two
