@@ -19,7 +19,7 @@ else
   unlet b:current_syntax
 endif
 
-syn include @ilisp $HOME/.vim/syntax/ilisp.vim
+syn include @ilisp syntax/ilisp.vim
 
 syn region intelibLispRegion matchgroup=cppDelim start=+(L|+ end=+)+ contains=intelibLispRegion,cppNumber,@ilisp
 
