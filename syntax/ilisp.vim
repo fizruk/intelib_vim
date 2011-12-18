@@ -16,7 +16,7 @@ syn region illComments start=+\/\*+ end=+\*\/+ contains=illTODO
 syn keyword illTODO TODO FIXME XXX contained
 
 " Symbols
-syn match illSymbol /[a-zA-Z_][a-zA-Z0-9_]*/
+syn match illSymbol /[a-zA-Z_][a-zA-Z0-9_]*\(([^)]*)\)*/
 
 " String literals
 syn match   illSpecialChar  contained "\\\([0-9]\+\|o[0-7]\+\|x[0-9a-fA-F]\+\|[\"\\'&\\abfnrtv]\|^[A-Z^_\[\\\]]\)"
