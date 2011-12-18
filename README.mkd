@@ -10,3 +10,11 @@ So you can use your own C++ syntax file and just include these two
 lines to add InteLib Lisp highlighting.
 
 Have fun!
+
+Screenshots (for solarized colorscheme)
+---------------------------------------
+
+![isomorph](https://github.com/fizruk/intelib_vim/raw/master/screenshots/isomorph.png)
+
+![fibs](https://github.com/fizruk/intelib_vim/raw/master/screenshots/fibs.png)
+
