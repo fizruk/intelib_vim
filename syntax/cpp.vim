@@ -21,7 +21,7 @@ endif
 
 syn include @ilisp syntax/ilisp.vim
 
-syn region intelibLispRegion matchgroup=cppDelim start=+(L|+ end=+)+ contains=intelibLispRegion,@ilisp
+syn region intelibLispRegion matchgroup=cppDelim start=+(L|+ end=+)+ contains=intelibLispRegion,@ilisp fold
 
 " C++ extentions
 syn keyword cppStatement	new delete this friend using
