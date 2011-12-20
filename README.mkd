@@ -18,3 +18,4 @@ Screenshots (for solarized colorscheme)
 
 ![fibs](https://github.com/fizruk/intelib_vim/raw/master/screenshots/fibs.png)
 
+![reverse](https://github.com/fizruk/intelib_vim/raw/master/screenshots/reverse.png)
